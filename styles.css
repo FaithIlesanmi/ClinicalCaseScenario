@@ -1,0 +1,526 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  opacity: 0.95;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border: 4px solid #0e4f1f;
+  border-radius: 10px;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+
+
+
+p{text-align:center;
+font-family:sans-serif;
+font-size: 17px;}
+.header{
+    background-color: dodgerblue;
+    border:2px solid black;
+    border-radius: 8px;
+     font-family: 'Sacramento', cursive;
+
+
+}
+header{
+  color: black;
+  margin: 10px;
+  text-align: center;
+      /* background-color: dodgerblue; */
+      padding:10px;
+
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      justify-content: center;
+      display:flex;
+      animation-name:moveInRight;
+animation-duration:1s;
+animation-timing-function:ease-out;
+  }
+
+
+
+/*#dcf0f7*/
+  h3{
+      /* background-color: #f4a817; */
+      /* background-color: dodgerblue; */
+      color: black;
+      padding: 10px;
+      margin:10px;
+      justify-content: center;
+      text-align: center;
+      display:flex;
+      align-items: center;
+
+  }
+
+
+#main-doc header {
+  text-align: center;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+/*dcf0f7*/
+#navbar li {
+  color: #4d4e53;
+  /* background-color: #e4f9f5; */
+  background-color: #66bfbf;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+
+
+
+/*#4d4e53*/
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  border:#4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+
+
+section article {
+  color: black;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
+
+#footer {
+  position: sticky;
+  top:100vh;
+  opacity: 0.95;
+  /*bottom: 0;*/
+  /* width: 100%; */
+  /* height: 2.5rem; */
+  text-align:center;
+  /* background-color: #E4F9F5; */
+
+
+         /* Footer height #66bfbf */
+         background-color: #66bfbf;
+         margin-top:0;
+
+        padding:50px 0 20px;
+
+}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+  border: 4px solid rgba(0, 22, 22, 0.4);
+
+  border-radius: 10px;
+  /* box-shadow: 0 8px 8px -4px lightblue; /* Footer height */ */
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+.nav-link:hover{
+    background-color:#E9b200;
+    /* background-color: dodgerblue; */
+}
+
+#product-overview{
+    background: url("book.jpeg");
+    /* linear-gradient(to right top, #E4F9F5, transparent) */
+    width: 100%;
+    height: 528px;
+    /* padding: 10px; */
+    background-size: cover;
+     position: relative;
+z-index:-1;
+margin-bottom: 0;
+}
+
+.background{background: url("plans-background.jpg");
+width:100%;
+height:100%;
+position:fixed;
+z-index:-1;
+background-size: cover;
+}
+#product-overview::after {
+  content: "";
+  background: url("book.jpeg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+
+.top-container{
+background-color: #E4F9F5;
+
+opacity: 0.95;
+/* background: #fff8f3; #2bc4ad*/
+/* background: url("booksc.jpeg"); */
+background-size: cover;
+/* background-color: #66bfbf; */
+        padding-top: 100px;
+        margin-bottom:0;
+
+        position:relative;
+
+        height:500px;
+justify-content: center;
+align-items: center;
+  text-align:center;
+  /* z-index: -1; */
+
+}
+.second-container{
+    background-color: #E4F9F5;
+    opacity: 0.95;
+    /* background-color: #66bfbf; */
+            padding-top: 100px;
+            margin-bottom:0;
+            position:relative;
+
+            height:500px;
+    justify-content: center;
+    align-items: center;
+      text-align:center;
+
+}
+.third-container{
+    background-color: #E4F9F5;
+    /* background-image: linear-gradient(to right top, #E4F9F5, lightblue); */
+    opacity: 0.95;
+    /* background-color: #66bfbf; */
+            padding-top: 100px;
+            margin-bottom:0;
+            position:relative;
+
+            height:700px;
+    justify-content: center;
+    align-items: center;
+      text-align:center;
+
+}
+
+
+    .middle-container{
+        margin-bottom:0;
+        opacity: 0.95;
+
+        }
+
+        .btn {
+          background: #11cdd4;
+          background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+          background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+          background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+          background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+          background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+          -webkit-border-radius: 8;
+          -moz-border-radius: 8;
+          border-radius: 8px;
+          font-family: 'Montserrat', sans-serif;
+          color: dodgerblue;
+          font-size: 20px;
+          padding: 10px 20px 10px 20px;
+          text-decoration: none;
+        }
+
+        .btn:hover {
+          background: #30e3cb;
+          background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+          background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+          background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+          background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+          background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+          text-decoration: none;
+        }
+        .copyright, .footer-link{color:dodgerblue;
+            font-size:0.75rem;
+        padding:20px 0;}
+
+        .footer-link{
+            margin:10px;
+        }
+
+
+        .button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  /* box-shadow: 0 8px 8px -4px lightblue; */
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+
+.button1 {
+  background-color: dodgerblue;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: bolder;
+  font-size: 30px;
+  /* font-family: sans-serif; */
+  font-family: 'Sacramento', cursive;
+
+}
+
+.button1:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #f4a817;
+}
+
+.button2 {
+  background-color: dodgerblue;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-weight: bolder;
+   font-size: 30px;
+    font-family: 'Sacramento', cursive;
+   /* font-family: sans-serif; */
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #f4a817;
+}
+
+.plan{
+margin:90px;
+    border:4px solid #0e4f1f;
+
+    /* #0e4f1f; #f4a817 #4d4e53;*/
+    width:80%;
+    z-index:auto;
+    border-radius: 10px;
+    /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+    /* box-shadow: 0 8px 8px -4px lightblue; */
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    margin-top: 25px;
+    z-index:auto;
+
+}
+.one{
+    background-color: #E9b200;
+    /* background-color: #E4F9F5; */
+    padding:16px;
+    border: 2px solid #0e4f1f;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    /* box-shadow: 0 8px 8px -4px lightblue; */
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+/* #2bc4ad */
+.two{
+    background-color: #E9b200;
+    padding:16px;
+    border: 2px solid #0e4f1f;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'PT Sans', sans-serif;
+    /* box-shadow: 0 8px 8px -4px lightblue; */
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+.one:hover{background-color:#66bfbf;
+color: black;
+border: 2px solid #f4a817;
+
+}
+.two:hover{
+    background-color: #66bfbf;
+    color: black;
+    border: 2px solid #f4a817;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  color:black;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  justify-content: center;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  display: block;
+  justify-content: center;
+  display:flex;
+  align-items:center;
+  word-wrap: break-word;
+  border-radius: 24px;
+  border-radius: 24px;
+  border: 2px solid rgba(0, 22, 22, 0.4);
+  box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3);
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+ color:black;
+  transform: rotateY(180deg);
+  text-align:center;
+}
+
+@media(max-width:768px){
+    .flip-card{
+        margin:auto;
+    }
+}
+
+.gum{
+    text-decoration: none;
+    color:black;
+    font-size:16px;
+    text-align:center;
+}
+.gum-1{
+    background:#79bfa1;
+}
+.gum-3{
+    background:#548cff;
+}
+
+.plan-a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new{
+
+}
+.treatment{
+    text-decoration:none;
+    color:black;
+}
